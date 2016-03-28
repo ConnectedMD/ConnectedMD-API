@@ -57,7 +57,7 @@ var AccountSchema = new mongoose.Schema({
     },
     owner: {
     },
-    description: String,
+    description: String
 });
 
 mongoose.model('Account', AccountSchema);
