@@ -1,0 +1,1 @@
+node server.js mongo=mongodb://localhost:27017/connectedMD
