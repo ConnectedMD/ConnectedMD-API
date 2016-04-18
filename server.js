@@ -184,13 +184,15 @@ var job = new CronJob('00 00 03 * * 1-7',
 );
 
 //-- START: socket.io server
+//-- https://github.com/andyet/signalmaster
 var yetify = require('yetify'),
     socketConfig = require('getconfig'),
     sockets = require('./sockets'),
     socketPort = socketConfig.server.port,
     server_handler = function (req, res) {
+        console.log("Conference Request");
         res.writeHead(404);
-        res.end();
+        res.end("OK");
     },
     socketServer = null;
 // Create an http(s) server instance to that socket.io can listen to

@@ -19,7 +19,7 @@
   ],
   "turnservers": [
     {
-      "urls": ["turn:localhost"],
+      "urls": ["turn:localhost:8888"],
       "secret": "turnserversharedsecret",
       "expiry": 86400
     }
