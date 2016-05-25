@@ -16,7 +16,7 @@ var exe = process.argv[0];
 var numCPUs = os.cpus().length;
 var machineName = os.hostname().toUpperCase();
 var port = process.env.PORT !== undefined ? process.env.PORT || 8080 : 8080;
-var mongoConnection = process.env.mongo !== undefined ? process.env.mongo : "mongodb://52.86.239.69:27017/connectedMD";
+var mongoConnection = process.env.mongo !== undefined ? process.env.mongo : "mongodb://localhost:27017/connectedMD";
 
 //-- messaging
 var consoleLog = function (message, force) { console.log(message); };
