@@ -16,6 +16,7 @@ var query = function(credentials, method, session) {
       return query.findOne({ email : credentials.email }, function (err, data) {
          if (credentials.email.length > 3 && credentials.password.length > 3) {
                if (err || data === null) {
+                  console.log(err, data);
                   returnJSON = "{\"token\":\"\", \"error\":\"User not found\"}";
                } else {
                   var password = hash(encrypt(credentials.password).content);
