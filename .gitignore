@@ -2,7 +2,7 @@ node_modules/
 .ntvs_analysis.dat
 .ntvs_analysis.dat.tmp
 obj/Debug/powwowAPI.njsproj.FileListAbsolute.txt
-/iisnode
+iisnode
 /.vs/config/applicationhost.config
 /UpgradeLog.htm
 /bin
